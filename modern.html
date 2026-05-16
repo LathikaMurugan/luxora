@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern UI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.85)),
+url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+}
+
+.content{
+max-width:900px;
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+font-size:80px;
+margin-bottom:25px;
+background:linear-gradient(to right,#ff4fd8,#8b5cf6,#22d3ee);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+p{
+font-size:20px;
+line-height:1.9;
+color:#d0d0d0;
+margin-bottom:40px;
+}
+
+a{
+display:inline-block;
+padding:15px 35px;
+border-radius:18px;
+background:linear-gradient(to right,#ff00aa,#6a00ff);
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.4s;
+}
+
+a:hover{
+transform:translateY(-5px);
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>Modern UI</h1>
+
+<p>
+Premium layouts with immersive animations, glassmorphism,
+futuristic gradients and elite visual aesthetics crafted for
+next-generation digital experiences.
+</p>
+
+<a href="index.html">Back Home</a>
+
+</div>
+
+</section>
+
+</body>
+</html>
